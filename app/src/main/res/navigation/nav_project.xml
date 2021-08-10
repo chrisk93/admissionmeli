@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_project"
+    app:startDestination="@id/list_fragment">
+
+    <fragment
+        android:id="@+id/list_fragment"
+        android:name="com.example.mercadolibreprueba.views.ListProdsFragment"
+        tools:layout="@layout/fragment_list_prods"
+        android:fitsSystemWindows="true"
+        >
+
+        <action
+            android:id="@+id/fragmentlist_to_detail"
+            app:destination="@id/detail_fragment"
+            />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/detail_fragment"
+        android:name="com.example.mercadolibreprueba.views.DetailFragment"
+        tools:layout="@layout/fragment_detail"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fitsSystemWindows="true">
+
+    <action
+        android:id="@+id/fragmentdetail_to_webview"
+        app:destination="@id/webview_fragment"
+        />
+    </fragment>
+
+    <fragment
+        android:id="@+id/webview_fragment"
+        android:name="com.example.mercadolibreprueba.views.WebviewFragment"
+        tools:layout="@layout/fragment_webview"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:fitsSystemWindows="true">
+
+    </fragment>
+
+</navigation>
