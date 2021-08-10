@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/default_margin"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardBackgroundColor="@color/cardview_light_background"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    app:cardElevation="@dimen/cardview_default_elevation">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding">
+
+        <ImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="@dimen/image_size"
+            android:layout_height="@dimen/image_size"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/default_margin" />
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageViewIcon"
+            android:lines="1"
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textViewAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewName"
+            android:layout_toEndOf="@id/imageViewIcon"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:layout_marginTop="@dimen/margin_5"/>
+        <TextView
+            android:id="@+id/textViewCondition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textViewAvailable"
+            android:layout_toEndOf="@id/imageViewIcon"
+            android:gravity="center_vertical"
+            android:lines="1"
+            android:textSize="16sp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/imageViewIcon"
+            android:gravity="center_vertical"
+            android:lines="1"
+            tools:text="20.000"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/textViewCondition"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
