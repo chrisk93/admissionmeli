@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">MercadoLibre</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_categories">Categorias</string>
+    <string name="title_search">Buscar</string>
+    <string name="buscar">Buscar productos, marcas y mas...</string>
+    <string name="field_empty">El campo no puede ser vacio</string>
+    <string name="quantity">Cantidad Disponible.  %1$d </string>
+    <string name="unautorized">Sin autorización</string>
+    <string name="notfound">No encontrado</string>
+    <string name="genericerror">Algo salió mal intenta nuevamente</string>
+    <string name="timeout">Timeout</string>
+    <string name="image_product">imagen Producto</string>
+    <string name="by">Mercado Libre</string>
+    <string name="offer">OFERTA DEL DIA</string>
+    <string name="quantity_value"> %1$d Vendidos</string>
+    <string name="price">$ %1$d</string>
+    <string name="dues">Desde %1$d cuotas</string>
+    <string name="shipping_free">Envio gratis a nivel nacional</string>
+    <string name="shipping_with_cost">Envio con costo adicional</string>
+    <string name="title_stock">Stock Disponible</string>
+    <string name="btn_buy">Preguntar</string>
+    <string name="text_desc">Descripción</string>
+    <string name="state">Estado: %1$s</string>
+    <string name="value_dues">"Cuotas mensuales de: %1$d"</string>
+
+    <string name="intent_product">PRODUCT</string>
+    <string name="intent_url">URL</string>
+    <string name="attributes">%1$s: %2$s \n</string>
+    <string name="attribute">%1$s:</string>
+    <string name="find_all">Encuentra todo lo que quieras en un solo lugar</string>
+    <string name="meet_ways_send">Conoce los tiempos y las formas de envío.</string>
+    <string name="not_found_error">Oops! Elemento no encontrado</string>
+    <string name="location_state">%1$s - %2$s</string>
+
+    <string name="no_conection">Valide su conexión e intente de nuevo</string>
+</resources>
